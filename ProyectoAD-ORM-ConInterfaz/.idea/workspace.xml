@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c6c43ed-bd4e-4092-ae92-3b86e36f7d60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Equipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Inscripcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Miembro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Tipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Torneo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Tables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/9781484219546.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/CreateData.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/CreateTables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/GolfClub.accdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/GolfDatabase" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../beg-sql-queries-master/contributing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAD-ORM/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2d53nZK2VB0wJgBf31AvkHrt7wN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/modelo" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c6c43ed-bd4e-4092-ae92-3b86e36f7d60" name="Changes" comment="" />
+      <created>1709284283264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709284283264</updated>
+    </task>
+    <servers />
+  </component>
+</project>
