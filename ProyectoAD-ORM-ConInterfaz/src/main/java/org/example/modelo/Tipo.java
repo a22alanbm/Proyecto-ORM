@@ -1,10 +1,17 @@
 package org.example.modelo;
-
+import jakarta.persistence.*;
+@Entity
+@Table(name = "Type")
 public class Tipo {
-    // Representa la tabla 'Type' en la base de datos
-    private String tipo;   // Corresponde al atributo 'Type' en la tabla
-    private int tarifa;     // Corresponde al atributo 'Fee' en la tabla
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
+    @Column(name = "Type")
+    private String tipo;
+
+    @Column(name = "Fee")
+    private int tarifa;
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
     public String getTipo() {

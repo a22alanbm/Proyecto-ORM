@@ -1,21 +1,45 @@
 package org.example.modelo;
-
-
+import jakarta.persistence.*;
 import java.util.Date;
 
-public class Miembro {
-    // Representa la tabla 'Member' en la base de datos
-    private int idMiembro;          // Corresponde al atributo 'MemberID' en la tabla
-    private String apellido;        // Corresponde al atributo 'LastName' en la tabla
-    private String nombre;          // Corresponde al atributo 'FirstName' en la tabla
-    private String tipoMiembro;     // Corresponde al atributo 'MemberType' en la tabla
-    private String telefono;        // Corresponde al atributo 'Phone' en la tabla
-    private Integer handicap;        // Corresponde al atributo 'Handicap' en la tabla
-    private Date fechaIngreso;      // Corresponde al atributo 'JoinDate' en la tabla
-    private Integer coach;           // Corresponde al atributo 'Coach' en la tabla (MemberID)
-    private String equipo;          // Corresponde al atributo 'Team' en la tabla
-    private String genero;          // Corresponde al atributo 'Gender' en la tabla
 
+@Entity
+@Table(name = "Member")
+public class Miembro {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "MemberID")
+    private int idMiembro;
+
+    @Column(name = "LastName")
+    private String apellido;
+
+    @Column(name = "FirstName")
+    private String nombre;
+
+    @Column(name = "MemberType")
+    private String tipoMiembro;
+
+    @Column(name = "Phone")
+    private String telefono;
+
+    @Column(name = "Handicap")
+    private Integer handicap;
+
+    @Column(name = "JoinDate")
+    @Temporal(TemporalType.DATE)
+    private Date fechaIngreso;
+
+    @Column(name = "Coach")
+    private Integer coach;
+
+    @Column(name = "Team")
+    private String equipo;
+
+    @Column(name = "Gender")
+    private String genero;
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
     public int getIdMiembro() {

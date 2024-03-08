@@ -1,10 +1,20 @@
 package org.example.modelo;
-
+import jakarta.persistence.*;
+@Entity
+@Table(name = "Team")
 public class Equipo {
-    // Representa la tabla 'Team' en la base de datos
-    private String nombreEquipo;    // Corresponde al atributo 'TeamName' en la tabla
-    private String nochePractica;    // Corresponde al atributo 'PracticeNight' en la tabla
-    private Integer manager;         // Corresponde al atributo 'Manager' en la tabla (MemberID)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "TeamName")
+    private String nombreEquipo;
+
+    @Column(name = "PracticeNight")
+    private String nochePractica;
+
+    @Column(name = "Manager")
+    private Integer manager;
 
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 

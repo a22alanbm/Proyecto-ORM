@@ -1,11 +1,20 @@
 package org.example.modelo;
-
+import jakarta.persistence.*;
+@Entity
+@Table(name = "Entry")
 public class Inscripcion {
-    // Representa la tabla 'Entry' en la base de datos
-    private int idMiembro;  // Corresponde al atributo 'MemberID' en la tabla
-    private int idTorneo;   // Corresponde al atributo 'TourID' en la tabla
-    private int año;        // Corresponde al atributo 'Year' en la tabla
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
+    @Column(name = "MemberID")
+    private int idMiembro;
+
+    @Column(name = "TourID")
+    private int idTorneo;
+
+    @Column(name = "Year")
+    private int año;
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
     public int getIdMiembro() {
