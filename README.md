@@ -48,7 +48,7 @@ Puedes utilizar la barra de tareas para crear, editar y eliminar por linea de co
 </p>
 
 ### Error
-Un error minimo que no ha sido capaz de solucionarse es por culpa de jafafx, podrá percatarse que al crear un nuevo Torneo, javafx comete un error y se muestran datos adicionales erroneos al final de la lista.
+Un error minimo que no ha sido capaz de solucionarse es por culpa de jafafx, podrá percatarse que al crear un nuevo Torneo, javafx comete un error y se muestran datos adicionales erroneos al final de la lista, pero no es dañino, solo visual.
 
 <p align="center">
   <img src="images/image-4.png" alt="Image">

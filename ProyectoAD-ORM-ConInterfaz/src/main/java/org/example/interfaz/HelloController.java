@@ -191,27 +191,31 @@ public class HelloController {
             if(tournamentList.getSelectionModel().getSelectedIndex() == -1) {
                 tournamentList.getSelectionModel().selectFirst();
             }
-            Torneo selectedTournament = torneos.get(tournamentList.getSelectionModel().getSelectedIndex());
+            try{
+                Torneo selectedTournament = torneos.get(tournamentList.getSelectionModel().getSelectedIndex());
 
-            // Filtrar inscripciones por el torneo seleccionado
-            List<Inscripcion> tournamentInscriptions = inscripcions.stream()
-                    .filter(inscripcion -> inscripcion.getIdTorneo() == selectedTournament.getIdTorneo())
-                    .toList();
 
-            // Utilizar un conjunto para almacenar miembros únicos
-            Set<Miembro> uniqueMembers = new HashSet<>();
+                // Filtrar inscripciones por el torneo seleccionado
+                List<Inscripcion> tournamentInscriptions = inscripcions.stream()
+                        .filter(inscripcion -> inscripcion.getIdTorneo() == selectedTournament.getIdTorneo())
+                        .toList();
 
-            // Obtener los miembros asociados a las inscripciones encontradas
-            for (Inscripcion inscripcion : tournamentInscriptions) {
-                miembros.stream()
-                        .filter(m -> m.getIdMiembro() == inscripcion.getIdMiembro())
-                        .findFirst()
-                        .ifPresent(uniqueMembers::add);
-            }
+                // Utilizar un conjunto para almacenar miembros únicos
+                Set<Miembro> uniqueMembers = new HashSet<>();
 
-            // Agregar los miembros únicos a memberList
-            for (Miembro uniqueMember : uniqueMembers) {
-                memberList.getItems().add(uniqueMember.getNombre() + " " + uniqueMember.getApellido());
+                // Obtener los miembros asociados a las inscripciones encontradas
+                for (Inscripcion inscripcion : tournamentInscriptions) {
+                    miembros.stream()
+                            .filter(m -> m.getIdMiembro() == inscripcion.getIdMiembro())
+                            .findFirst()
+                            .ifPresent(uniqueMembers::add);
+                }
+
+                // Agregar los miembros únicos a memberList
+                for (Miembro uniqueMember : uniqueMembers) {
+                    memberList.getItems().add(uniqueMember.getNombre() + " " + uniqueMember.getApellido());
+                }
+            }catch (Exception e) {
             }
         });
         memberList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
@@ -319,6 +323,8 @@ public class HelloController {
     }
 
     private void mostrarDatosMiembro(Miembro miembro) {
+        try {
+
         memberID.setText(String.valueOf(miembro.getIdMiembro()));
         memberNombre.setText(miembro.getNombre());
         memberApellido.setText(miembro.getApellido());
@@ -334,6 +340,9 @@ public class HelloController {
         } else {
             memberEntrenador.setText("N/A");
         }
+        }catch (Exception e) {
+        }
+
     }
     private Miembro obtenerMiembroPorNombre(String nombreCompleto) {
         for (Miembro miembro : miembros) {
@@ -382,6 +391,7 @@ public class HelloController {
     }
 
     private void actualizar() {
+        try{
         EntityManager entityManager = MyConnectionManager.getInstance().getManager();
         TorneoDAO torneoDao = new TorneoDAO(entityManager);
         TipoDAO tipoDao = new TipoDAO(entityManager);
@@ -414,6 +424,8 @@ public class HelloController {
             }
 
         });
+        } catch (Exception e) {
+        }
     }
 
 
