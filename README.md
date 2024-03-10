@@ -24,8 +24,11 @@ Equipo: Contiene datos que se muestran gráficamente.
 
 ### Instalación
 Esta parte importante queda a cargo del usuario, si usa el proyecto completo la base de datos debería estar correcta.
+
 Pero si debe crear una base de datos, tendría que cambiar en el persistence.xml la ruta y tanto en ese caso como si está vacía deberá ejecutar en orden las inserciones de datos.
+
 En el caso de que crees la base de datos, deberás ejecutar el programa para que este cree las tablas correctamente, tras ello, cierra el programa, ejecuta las sentencias sql y empieza a trabajar.
+
 Esto en los casos de que quieras trabajar con los datos existentes, pero la aplicación se puede usar por completo sin estos datos, ya que son independientes, puedes crear los tuyos propios sin problema.
 
 
