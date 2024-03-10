@@ -5,47 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c6c43ed-bd4e-4092-ae92-3b86e36f7d60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Connection/MyConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DTOs/EquipoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DTOs/InscripcionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DTOs/MiembroDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DTOs/TipoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DTOs/TorneoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/ventanas/EquipoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/ventanas/InscripcionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/ventanas/MiembroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/ventanas/TipoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/ventanas/TorneoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/golfphoto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/ventanas (NoImplementadas)/create-equipo-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/ventanas (NoImplementadas)/create-inscripcion-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/ventanas (NoImplementadas)/create-miembro-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/ventanas (NoImplementadas)/create-tipo-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/ventanas (NoImplementadas)/create-torneo-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DAOs/EquipoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DAOs/EquipoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DAOs/InscripcionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DAOs/InscripcionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/interfaz/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/interfaz/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaz/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Inscripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Miembro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Miembro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Tipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Tipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Torneo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Torneo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/interfaz/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/9781484219546.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/CreateData.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/CreateTables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/GolfClub.accdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/GolfDatabase" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/contributing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/DataBaseH2/golfdatabase.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/DataBaseH2/golfdatabase.trace.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/2023-DI-a22alanbm/AplicativoXestorTarefas",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/2023-DI-a22alanbm/AplicativoXestorTarefas&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Proyecto-ORM\ProyectoAD-ORM-ConInterfaz\src\main\resources" />
