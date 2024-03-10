@@ -14,6 +14,7 @@ La interfaz de usuario proporciona una experiencia amigable, permitiendo a los u
 <p align="center">
   <img src="images/image-2.png" alt="Image">
 </p>
+
 ### Funcionalidades
 Tipo: Se refiere al tipo de torneo y está asociado a una tarifa.
 Torneo: Contiene pocos datos que se muestran gráficamente.
