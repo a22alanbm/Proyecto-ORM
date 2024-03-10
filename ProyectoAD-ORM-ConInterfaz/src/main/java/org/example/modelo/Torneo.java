@@ -3,20 +3,23 @@ package org.example.modelo;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Tournament")
+@Table(name = "\"Tournament\"")
 public class Torneo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    @Column(name = "TourID")
+    @Column(name = "\"TourID\"")
     private int idTorneo;
 
-    @Column(name = "TourName")
+    @Column(name = "\"TourName\"")
     private String nombreTorneo;
 
-    @Column(name = "TourType")
+    @Column(name = "\"TourType\"")
     private String tipoTorneo;
+
+    public Torneo(String nombreTorneo, String tipoTorneo) {
+        this.nombreTorneo = nombreTorneo;
+        this.tipoTorneo = tipoTorneo;
+    }
 
 
     // Constructores, getters, setters y otros métodos pueden agregarse aquí

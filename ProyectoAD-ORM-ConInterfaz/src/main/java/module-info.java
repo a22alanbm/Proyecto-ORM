@@ -6,6 +6,8 @@ module org.example.proyectoadormconinterfaz {
     requires org.hibernate.orm.core;
 
 
-    opens org.example.proyectoadormconinterfaz to javafx.fxml;
-    exports org.example.proyectoadormconinterfaz;
+    opens org.example.modelo to org.hibernate.orm.core;
+
+    opens org.example.interfaz to javafx.fxml;
+    exports org.example.interfaz;
 }

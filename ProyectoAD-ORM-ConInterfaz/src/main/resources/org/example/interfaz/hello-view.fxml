@@ -1,16 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:id="Pane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interfaz.HelloController">
+    <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem fx:id="close"  mnemonicParsing="false" text="Close" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Crear">
+                <items>
+                    <MenuItem fx:id="crearTipo"        mnemonicParsing="false" text="CrearTipo" />
+                </items>
+                <items>
+                    <MenuItem fx:id="crearMiembro"     mnemonicParsing="false" text="CrearMiembro" />
+                </items>
+                <items>
+                    <MenuItem fx:id="crearInscripcion" mnemonicParsing="false" text="CrearInscripcion" />
+                </items>
+                <items>
+                    <MenuItem fx:id="crearEquipo"      mnemonicParsing="false" text="CrearEquipo" />
+                </items>
+                <items>
+                    <MenuItem fx:id="crearTorneo"      mnemonicParsing="false" text="CrearTorneo" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Editar">
+                <items>
+                    <MenuItem fx:id="editarTipo"        mnemonicParsing="false" text="EditarTipo" />
+                </items>
+                <items>
+                    <MenuItem fx:id="editarMiembro"     mnemonicParsing="false" text="EditarMiembro" />
+                </items>
+                <items>
+                    <MenuItem fx:id="editarInscripcion" mnemonicParsing="false" text="EditarInscripcion" />
+                </items>
+                <items>
+                    <MenuItem fx:id="editarEquipo"      mnemonicParsing="false" text="EditarEquipo" />
+                </items>
+                <items>
+                    <MenuItem fx:id="editarTorneo"      mnemonicParsing="false" text="EditarTorneo" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Eliminar">
+                <items>
+                    <MenuItem fx:id="eliminarTipo"        mnemonicParsing="false" text="EliminarTipo" />
+                </items>
+                <items>
+                    <MenuItem fx:id="eliminarMiembro"     mnemonicParsing="false" text="EliminarMiembro" />
+                </items>
+                <items>
+                    <MenuItem fx:id="eliminarInscripcion" mnemonicParsing="false" text="EliminarInscripcion" />
+                </items>
+                <items>
+                    <MenuItem fx:id="eliminarEquipo"      mnemonicParsing="false" text="EliminarEquipo" />
+                </items>
+                <items>
+                    <MenuItem fx:id="eliminarTorneo"      mnemonicParsing="false" text="EliminarTorneo" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.proyectoadormconinterfaz.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<VBox alignment="CENTER" opacity="0.77" prefHeight="563.0" prefWidth="629.0" spacing="20.0" style="-fx-background-image: url('/golfphoto.png'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center center; -fx-background-color: transparent;" >
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <BorderPane prefHeight="356.0" prefWidth="589.0" style="-fx-border-color: black;">
+        <left>
+            <ScrollPane prefHeight="200.0" prefWidth="110.0" BorderPane.alignment="CENTER">
+                <content>
+                    <ListView fx:id="tournamentList" prefHeight="352.0" prefWidth="108.0" />
+                </content>
+            </ScrollPane>
+        </left>
+        <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <left>
+                    <ScrollPane prefHeight="200.0" prefWidth="114.0" BorderPane.alignment="CENTER">
+                        <content>
+                            <ListView fx:id="memberList" prefHeight="352.0" prefWidth="112.0" />
+                        </content>
+                    </ScrollPane>
+                </left>
+                <center>
+                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+
+                        <center>
+                            <VBox prefHeight="200.0" prefWidth="100.0">
+
+                                <children>
+                                    <GridPane style="-fx-border-color: black;">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                            <RowConstraints maxHeight="32.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                                            <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                              <children>
+                                 <Label alignment="CENTER" prefHeight="17.0" prefWidth="121.0" style="-fx-font-weight: bold;" text="Tor.ID:">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="17.0" prefWidth="142.0" style="-fx-font-weight: bold;" text="Tor.Nombre:" GridPane.columnIndex="1">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="17.0" prefWidth="121.0" style="-fx-font-weight: bold;" text="Tor.Tipo:" GridPane.columnIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="tourID" alignment="CENTER" prefHeight="17.0" prefWidth="120.0" style="-fx-font-weight: bold;" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="tourName" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="tourType" alignment="CENTER" prefHeight="17.0" prefWidth="125.0" style="-fx-font-weight: bold;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                              </children>
+                                    </GridPane>
+                                    <GridPane prefHeight="175.0" prefWidth="365.0" style="-fx-border-color: black;">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                              <children>
+                                 <Label prefHeight="17.0" prefWidth="88.0" style="-fx-font-weight: bold;" text="                   ID:">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="91.0" style="-fx-font-weight: bold;" text="         Nombre:" GridPane.rowIndex="1">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="94.0" style="-fx-font-weight: bold;" text="         Apellido:" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="93.0" style="-fx-font-weight: bold;" text="        Teléfono:" GridPane.rowIndex="3">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="99.0" style="-fx-font-weight: bold;" text="        Destreza:" GridPane.columnIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="112.0" style="-fx-font-weight: bold;" text="          Ingreso:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="103.0" style="-fx-font-weight: bold;" text="          Género:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label prefHeight="17.0" prefWidth="104.0" style="-fx-font-weight: bold;" text="    Entrenador:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberID" prefHeight="17.0" prefWidth="98.0" style="-fx-font-weight: bold;" GridPane.columnIndex="1">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberNombre" prefHeight="17.0" prefWidth="92.0" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberApellido" prefHeight="17.0" prefWidth="96.0" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberTelefono" prefHeight="17.0" prefWidth="94.0" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberDestreza" prefHeight="17.0" prefWidth="94.0" style="-fx-font-weight: bold;" GridPane.columnIndex="3">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberIngreso" prefHeight="17.0" prefWidth="99.0" style="-fx-font-weight: bold;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberGenero" prefHeight="17.0" prefWidth="97.0" style="-fx-font-weight: bold;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                                 <Label fx:id="memberEntrenador" prefHeight="17.0" prefWidth="96.0" style="-fx-font-weight: bold;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                     <effect>
+                                         <DropShadow color="white" radius="3" spread="0.5" />
+                                     </effect>
+                                 </Label>
+                              </children>
+                                    </GridPane>
+                           <GridPane prefHeight="96.0" prefWidth="362.0" style="-fx-border-color: black;">
+                             <columnConstraints>
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                             </columnConstraints>
+                             <rowConstraints>
+                               <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                               <RowConstraints maxHeight="27.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                               <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                             </rowConstraints>
+                              <children>
+                                 <Label alignment="CENTER" prefHeight="17.0" prefWidth="180.0" style="-fx-font-weight: bold;" text="NochePractica:" GridPane.columnIndex="1">
+                               <effect>
+                                   <DropShadow color="white" radius="3" spread="0.5" />
+                               </effect>
+                           </Label>
+                                 <Label alignment="CENTER" prefHeight="17.0" prefWidth="181.0" style="-fx-font-weight: bold;" text="Gerente:" GridPane.columnIndex="2">
+                               <effect>
+                                   <DropShadow color="white" radius="3" spread="0.5" />
+                               </effect>
+                           </Label>
+                                 <Label fx:id="equipoNochePractica" alignment="CENTER" prefHeight="17.0" prefWidth="184.0" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                               <effect>
+                                   <DropShadow color="white" radius="3" spread="0.5" />
+                               </effect>
+                           </Label>
+                                 <Label fx:id="equipoGerente" alignment="CENTER" prefHeight="17.0" prefWidth="186.0" style="-fx-font-weight: bold;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                               <effect>
+                                   <DropShadow color="white" radius="3" spread="0.5" />
+                               </effect>
+                           </Label>
+                                 <Label alignment="CENTER" prefHeight="17.0" prefWidth="124.0" style="-fx-font-weight: bold;" text="Eq.Nombre:">
+                               <effect>
+                                       <DropShadow color="white" radius="3" spread="0.5" />
+                               </effect>
+                           </Label>
+                                 <Label fx:id="equipoNombre" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" style="-fx-font-weight: bold;" GridPane.rowIndex="2">
+                               <effect>
+                                   <DropShadow color="white" radius="3" spread="0.5" />
+                               </effect>
+                           </Label>
+                              </children>
+                           </GridPane>
+                                </children>
+                            </VBox>
+                        </center>
+                    </BorderPane>
+                </center>
+            </BorderPane>
+        </center>
+    </BorderPane>
+</VBox>
 </VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<DialogPane  xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interfaz.ventanas.MiembroController">
+    <content>
+        <VBox>
+            <TextField fx:id="nombreField" promptText="Nombre" />
+            <TextField fx:id="apellidoField" promptText="Apellido" />
+            <TextField fx:id="tipoMiembroField" promptText="Tipo de Miembro" />
+            <TextField fx:id="telefonoField" promptText="Teléfono" />
+            <TextField fx:id="handicapField" promptText="Handicap" />
+            <TextField fx:id="fechaIngresoField" promptText="Fecha de Ingreso" />
+            <TextField fx:id="coachField" promptText="ID del Entrenador" />
+            <TextField fx:id="equipoField" promptText="Nombre del Equipo" />
+            <TextField fx:id="generoField" promptText="Género" />
+            <Button text="Crear Miembro"/>
+        </VBox>
+    </content>
+</DialogPane>

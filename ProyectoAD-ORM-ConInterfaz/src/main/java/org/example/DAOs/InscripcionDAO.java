@@ -1,7 +1,7 @@
 package org.example.DAOs;
 import org.example.modelo.Inscripcion;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import java.util.List;
 
 public class InscripcionDAO implements DAO<Inscripcion, Integer> {

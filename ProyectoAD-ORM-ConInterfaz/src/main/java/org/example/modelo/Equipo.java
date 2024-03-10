@@ -1,19 +1,20 @@
 package org.example.modelo;
 import jakarta.persistence.*;
 @Entity
-@Table(name = "Team")
+@Table(name = "\"Team\"")
 public class Equipo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "\"TeamID\"")
+    private Integer idEquipo;
 
-    @Column(name = "TeamName")
+    @Column(name = "\"TeamName\"")
     private String nombreEquipo;
 
-    @Column(name = "PracticeNight")
+    @Column(name = "\"PracticeNight\"")
     private String nochePractica;
 
-    @Column(name = "Manager")
+    @Column(name = "\"Manager\"")
     private Integer manager;
 
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
@@ -59,5 +60,9 @@ public class Equipo {
                 ", nochePractica='" + nochePractica + '\'' +
                 ", manager=" + manager +
                 '}';
+    }
+
+    public int getIdEquipo() {
+        return idEquipo;
     }
 }

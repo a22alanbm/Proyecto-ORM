@@ -4,41 +4,39 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "Member")
+@Table(name = "\"Member\"")
 public class Miembro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    @Column(name = "MemberID")
+    @Column(name = "\"MemberID\"")
     private int idMiembro;
 
-    @Column(name = "LastName")
+    @Column(name = "\"LastName\"")
     private String apellido;
 
-    @Column(name = "FirstName")
+    @Column(name = "\"FirstName\"")
     private String nombre;
 
-    @Column(name = "MemberType")
+    @Column(name = "\"MemberType\"")
     private String tipoMiembro;
 
-    @Column(name = "Phone")
+    @Column(name = "\"Phone\"")
     private String telefono;
 
-    @Column(name = "Handicap")
+    @Column(name = "\"Handicap\"")
     private Integer handicap;
 
-    @Column(name = "JoinDate")
+    @Column(name = "\"JoinDate\"")
     @Temporal(TemporalType.DATE)
     private Date fechaIngreso;
 
-    @Column(name = "Coach")
+    @Column(name = "\"Coach\"")
     private Integer coach;
 
-    @Column(name = "Team")
+    @Column(name = "\"Team\"")
     private String equipo;
 
-    @Column(name = "Gender")
+    @Column(name = "\"Gender\"")
     private String genero;
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
@@ -123,9 +121,8 @@ public class Miembro {
     }
 
     // Ejemplo de constructor
-    public Miembro(int idMiembro, String apellido, String nombre, String tipoMiembro, String telefono,
+    public Miembro(String apellido, String nombre, String tipoMiembro, String telefono,
                    Integer handicap, Date fechaIngreso, Integer coach, String equipo, String genero) {
-        this.idMiembro = idMiembro;
         this.apellido = apellido;
         this.nombre = nombre;
         this.tipoMiembro = tipoMiembro;

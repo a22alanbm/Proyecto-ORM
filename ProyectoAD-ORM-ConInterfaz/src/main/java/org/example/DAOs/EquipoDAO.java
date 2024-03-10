@@ -1,6 +1,6 @@
 package org.example.DAOs;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import org.example.modelo.Equipo;
 import java.util.List;
 

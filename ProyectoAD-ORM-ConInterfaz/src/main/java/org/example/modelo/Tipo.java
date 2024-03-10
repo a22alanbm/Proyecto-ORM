@@ -1,16 +1,17 @@
 package org.example.modelo;
 import jakarta.persistence.*;
 @Entity
-@Table(name = "Type")
+@Table(name = "\"Type\"")
 public class Tipo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "\"TypeID\"")
+    private Integer idTipo;
 
-    @Column(name = "Type")
+    @Column(name = "\"Type\"")
     private String tipo;
 
-    @Column(name = "Fee")
+    @Column(name = "\"Fee\"")
     private int tarifa;
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
@@ -45,5 +46,9 @@ public class Tipo {
                 "tipo='" + tipo + '\'' +
                 ", tarifa=" + tarifa +
                 '}';
+    }
+
+    public int getIdTipo() {
+        return idTipo;
     }
 }
