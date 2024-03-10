@@ -2,6 +2,8 @@ package org.example.modelo;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "\"Tournament\"")
 public class Torneo {
@@ -15,6 +17,13 @@ public class Torneo {
 
     @Column(name = "\"TourType\"")
     private String tipoTorneo;
+
+    @ManyToOne
+    @JoinColumn(name = "\"TypeID\"", insertable = false, updatable = false)
+    private Tipo tipo;
+
+    @OneToMany(mappedBy = "torneo")
+    private List<Inscripcion> inscripciones;
 
     public Torneo(String nombreTorneo, String tipoTorneo) {
         this.nombreTorneo = nombreTorneo;

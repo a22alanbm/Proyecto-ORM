@@ -1,5 +1,7 @@
 package org.example.modelo;
 import jakarta.persistence.*;
+
+import java.util.List;
 @Entity
 @Table(name = "\"Team\"")
 public class Equipo {
@@ -16,6 +18,9 @@ public class Equipo {
 
     @Column(name = "\"Manager\"")
     private Integer manager;
+
+    @OneToMany(mappedBy = "equipoMiembro")
+    private List<Miembro> miembros;
 
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 

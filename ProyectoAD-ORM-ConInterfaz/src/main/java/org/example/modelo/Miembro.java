@@ -1,6 +1,7 @@
 package org.example.modelo;
 import jakarta.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
@@ -38,6 +39,14 @@ public class Miembro {
 
     @Column(name = "\"Gender\"")
     private String genero;
+
+    @ManyToOne
+    @JoinColumn(name = "\"TeamID\"", insertable = false, updatable = false)
+    private Equipo equipoMiembro;
+
+    @OneToMany(mappedBy = "miembro")
+    private List<Inscripcion> inscripciones;
+
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
     public int getIdMiembro() {

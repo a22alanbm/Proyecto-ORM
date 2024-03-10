@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c6c43ed-bd4e-4092-ae92-3b86e36f7d60" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/DataBaseH2/golfdatabase.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../beg-sql-queries-master/DataBaseH2/golfdatabase.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Inscripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Miembro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Miembro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Tipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Tipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/modelo/Torneo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/modelo/Torneo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

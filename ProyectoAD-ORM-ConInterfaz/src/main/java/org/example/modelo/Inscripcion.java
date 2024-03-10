@@ -1,9 +1,9 @@
 package org.example.modelo;
 import jakarta.persistence.*;
+
 @Entity
 @Table(name = "\"Entry\"")
 public class Inscripcion {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "\"EntryID\"")
@@ -17,6 +17,14 @@ public class Inscripcion {
 
     @Column(name = "\"EYear\"")
     private int año;
+
+    @ManyToOne
+    @JoinColumn(name = "\"MemberID\"", insertable = false, updatable = false)
+    private Miembro miembro;
+
+    @ManyToOne
+    @JoinColumn(name = "\"TourID\"", insertable = false, updatable = false)
+    private Torneo torneo;
     // Constructores, getters, setters y otros métodos pueden agregarse aquí
 
     public int getIdMiembro() {
