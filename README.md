@@ -1,6 +1,6 @@
 # Proyecto-ORM
 <p align="center">
-    ![alt text](image.png)
+    <img src="image.png"  alt="Image">
 </p>
 
 Descripción del Proyecto
